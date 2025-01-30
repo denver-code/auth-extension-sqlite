@@ -1,12 +1,6 @@
-use axum::{
-    extract::Extension,
-    response::Json,
-    routing::{get, post},
-    Router,
-};
+use axum::{extract::Extension, response::Json, routing::post, Router};
 use corex_api::ExtensionTrait;
 use serde::{Deserialize, Serialize};
-use serde_json::json;
 use sqlx::{migrate::MigrateDatabase, FromRow, Sqlite, SqlitePool};
 use std::sync::Arc;
 
