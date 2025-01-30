@@ -4,12 +4,12 @@ version = "0.1.0"
 edition = "2021"
 description = "An authentication extension for CoreX-API using SQLite"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/denver-code/auth-extension-mysql"
-keywords = ["auth", "corex", "extension", "mysql"]
+repository = "https://github.com/denver-code/auth-extension-sqlite"
+keywords = ["auth", "corex", "extension", "sqlite"]
 categories = ["web-programming", "authentication"]
 
 [lib]
-name = "auth_extension_mysql"
+name = "auth_extension_sqlite"
 path = "src/lib.rs"
 
 [dependencies]
