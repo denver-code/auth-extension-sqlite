@@ -1,0 +1,26 @@
+[package]
+name = "auth-extension-sqlite"
+version = "0.1.0"
+edition = "2021"
+description = "An authentication extension for CoreX-API using SQLite"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/denver-code/auth-extension-mysql"
+keywords = ["auth", "corex", "extension", "mysql"]
+categories = ["web-programming", "authentication"]
+
+[lib]
+name = "auth_extension_mysql"
+path = "src/lib.rs"
+
+[dependencies]
+axum = "0.8.1"
+serde_json = "1.0"
+corex-api = "0.1.1"
+sqlx = { version = "0.8.3", features = [
+    "sqlite",
+    "runtime-tokio-native-tls",
+    "migrate",
+] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+md5 = "0.7.0"
