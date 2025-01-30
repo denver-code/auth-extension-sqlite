@@ -39,3 +39,20 @@ async fn main() {
 }
 
 ```
+
+## API 
+The extension provides the following API:
+- POST `/register` - Register a new user
+  ```json
+  {
+    "username": "username",
+    "password": "password"
+  }
+  ```
+- POST `/login` - Login a user
+  ```json
+  {
+    "username": "username",
+    "password": "password"
+  }
+  ```
